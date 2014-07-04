@@ -1,0 +1,58 @@
+//
+//  ViewController.m
+//  FileIOSample
+//
+//  Created by student on 2014/07/04.
+//  Copyright (c) 2014年 student. All rights reserved.
+//
+
+#import "ViewController.h"
+
+@interface ViewController ()
+- (IBAction)editDone:(id)sender;
+- (IBAction)editCancel:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UITextView *myTextView;
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+    [self loadFile];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)editDone:(id)sender {
+    [self saveFile];
+}
+
+- (IBAction)editCancel:(id)sender {
+    [self loadFile];
+    [self.view endEditing:YES];
+}
+
+- (void) saveFile {
+    NSString *filePath = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/note.txt"];
+    [_myTextView.text writeToFile:filePath atomically:YES encoding:NSUTF8StringEncoding error:nil];
+}
+
+- (void) loadFile {
+    NSString *filePath = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/note.txt"];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if ([fileManager fileExistsAtPath:filePath]) {
+        _myTextView.text = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    } else {
+        NSLog(@"ファイルがありません");
+        _myTextView.text = nil;
+    }
+}
+
+@end
