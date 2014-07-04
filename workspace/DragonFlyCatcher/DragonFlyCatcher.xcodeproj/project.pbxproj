@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F1FD65619651F51000976C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1FD65519651F51000976C1 /* Foundation.framework */; };
+		3F1FD65819651F51000976C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1FD65719651F51000976C1 /* CoreGraphics.framework */; };
+		3F1FD65A19651F51000976C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1FD65919651F51000976C1 /* UIKit.framework */; };
+		3F1FD66019651F51000976C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F1FD65E19651F51000976C1 /* InfoPlist.strings */; };
+		3F1FD66219651F51000976C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1FD66119651F51000976C1 /* main.m */; };
+		3F1FD66619651F51000976C1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1FD66519651F51000976C1 /* AppDelegate.m */; };
+		3F1FD66919651F51000976C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1FD66719651F51000976C1 /* Main.storyboard */; };
+		3F1FD66C19651F51000976C1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1FD66B19651F51000976C1 /* ViewController.m */; };
+		3F1FD66E19651F51000976C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F1FD66D19651F51000976C1 /* Images.xcassets */; };
+		3F1FD67519651F51000976C1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1FD67419651F51000976C1 /* XCTest.framework */; };
+		3F1FD67619651F51000976C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1FD65519651F51000976C1 /* Foundation.framework */; };
+		3F1FD67719651F51000976C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1FD65919651F51000976C1 /* UIKit.framework */; };
+		3F1FD67F19651F51000976C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F1FD67D19651F51000976C1 /* InfoPlist.strings */; };
+		3F1FD68119651F51000976C1 /* DragonFlyCatcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1FD68019651F51000976C1 /* DragonFlyCatcherTests.m */; };
+		3F1FD68C196522DF000976C1 /* ring.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1FD68A196522DF000976C1 /* ring.png */; };
+		3F1FD68D196522DF000976C1 /* tombo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1FD68B196522DF000976C1 /* tombo.png */; };
+		3F1FD69019652BA4000976C1 /* KadoMaruButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1FD68F19652BA4000976C1 /* KadoMaruButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F1FD67819651F51000976C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F1FD64A19651F51000976C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F1FD65119651F51000976C1;
+			remoteInfo = DragonFlyCatcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F1FD65219651F51000976C1 /* DragonFlyCatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DragonFlyCatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1FD65519651F51000976C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3F1FD65719651F51000976C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3F1FD65919651F51000976C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3F1FD65D19651F51000976C1 /* DragonFlyCatcher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DragonFlyCatcher-Info.plist"; sourceTree = "<group>"; };
+		3F1FD65F19651F51000976C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F1FD66119651F51000976C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F1FD66319651F51000976C1 /* DragonFlyCatcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DragonFlyCatcher-Prefix.pch"; sourceTree = "<group>"; };
+		3F1FD66419651F51000976C1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F1FD66519651F51000976C1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F1FD66819651F51000976C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F1FD66A19651F51000976C1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3F1FD66B19651F51000976C1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3F1FD66D19651F51000976C1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3F1FD67319651F51000976C1 /* DragonFlyCatcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DragonFlyCatcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1FD67419651F51000976C1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3F1FD67C19651F51000976C1 /* DragonFlyCatcherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DragonFlyCatcherTests-Info.plist"; sourceTree = "<group>"; };
+		3F1FD67E19651F51000976C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F1FD68019651F51000976C1 /* DragonFlyCatcherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragonFlyCatcherTests.m; sourceTree = "<group>"; };
+		3F1FD68A196522DF000976C1 /* ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ring.png; sourceTree = "<group>"; };
+		3F1FD68B196522DF000976C1 /* tombo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tombo.png; sourceTree = "<group>"; };
+		3F1FD68E19652BA4000976C1 /* KadoMaruButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KadoMaruButton.h; sourceTree = "<group>"; };
+		3F1FD68F19652BA4000976C1 /* KadoMaruButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KadoMaruButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F1FD64F19651F51000976C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1FD65819651F51000976C1 /* CoreGraphics.framework in Frameworks */,
+				3F1FD65A19651F51000976C1 /* UIKit.framework in Frameworks */,
+				3F1FD65619651F51000976C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1FD67019651F51000976C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1FD67519651F51000976C1 /* XCTest.framework in Frameworks */,
+				3F1FD67719651F51000976C1 /* UIKit.framework in Frameworks */,
+				3F1FD67619651F51000976C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F1FD64919651F51000976C1 = {
+			isa = PBXGroup;
+			children = (
+				3F1FD65B19651F51000976C1 /* DragonFlyCatcher */,
+				3F1FD67A19651F51000976C1 /* DragonFlyCatcherTests */,
+				3F1FD65419651F51000976C1 /* Frameworks */,
+				3F1FD65319651F51000976C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F1FD65319651F51000976C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F1FD65219651F51000976C1 /* DragonFlyCatcher.app */,
+				3F1FD67319651F51000976C1 /* DragonFlyCatcherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F1FD65419651F51000976C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F1FD65519651F51000976C1 /* Foundation.framework */,
+				3F1FD65719651F51000976C1 /* CoreGraphics.framework */,
+				3F1FD65919651F51000976C1 /* UIKit.framework */,
+				3F1FD67419651F51000976C1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F1FD65B19651F51000976C1 /* DragonFlyCatcher */ = {
+			isa = PBXGroup;
+			children = (
+				3F1FD66419651F51000976C1 /* AppDelegate.h */,
+				3F1FD66519651F51000976C1 /* AppDelegate.m */,
+				3F1FD66719651F51000976C1 /* Main.storyboard */,
+				3F1FD66A19651F51000976C1 /* ViewController.h */,
+				3F1FD68A196522DF000976C1 /* ring.png */,
+				3F1FD68B196522DF000976C1 /* tombo.png */,
+				3F1FD66B19651F51000976C1 /* ViewController.m */,
+				3F1FD66D19651F51000976C1 /* Images.xcassets */,
+				3F1FD65C19651F51000976C1 /* Supporting Files */,
+				3F1FD68E19652BA4000976C1 /* KadoMaruButton.h */,
+				3F1FD68F19652BA4000976C1 /* KadoMaruButton.m */,
+			);
+			path = DragonFlyCatcher;
+			sourceTree = "<group>";
+		};
+		3F1FD65C19651F51000976C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F1FD65D19651F51000976C1 /* DragonFlyCatcher-Info.plist */,
+				3F1FD65E19651F51000976C1 /* InfoPlist.strings */,
+				3F1FD66119651F51000976C1 /* main.m */,
+				3F1FD66319651F51000976C1 /* DragonFlyCatcher-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F1FD67A19651F51000976C1 /* DragonFlyCatcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F1FD68019651F51000976C1 /* DragonFlyCatcherTests.m */,
+				3F1FD67B19651F51000976C1 /* Supporting Files */,
+			);
+			path = DragonFlyCatcherTests;
+			sourceTree = "<group>";
+		};
+		3F1FD67B19651F51000976C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F1FD67C19651F51000976C1 /* DragonFlyCatcherTests-Info.plist */,
+				3F1FD67D19651F51000976C1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F1FD65119651F51000976C1 /* DragonFlyCatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F1FD68419651F51000976C1 /* Build configuration list for PBXNativeTarget "DragonFlyCatcher" */;
+			buildPhases = (
+				3F1FD64E19651F51000976C1 /* Sources */,
+				3F1FD64F19651F51000976C1 /* Frameworks */,
+				3F1FD65019651F51000976C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DragonFlyCatcher;
+			productName = DragonFlyCatcher;
+			productReference = 3F1FD65219651F51000976C1 /* DragonFlyCatcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F1FD67219651F51000976C1 /* DragonFlyCatcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F1FD68719651F51000976C1 /* Build configuration list for PBXNativeTarget "DragonFlyCatcherTests" */;
+			buildPhases = (
+				3F1FD66F19651F51000976C1 /* Sources */,
+				3F1FD67019651F51000976C1 /* Frameworks */,
+				3F1FD67119651F51000976C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F1FD67919651F51000976C1 /* PBXTargetDependency */,
+			);
+			name = DragonFlyCatcherTests;
+			productName = DragonFlyCatcherTests;
+			productReference = 3F1FD67319651F51000976C1 /* DragonFlyCatcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F1FD64A19651F51000976C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = student;
+				TargetAttributes = {
+					3F1FD67219651F51000976C1 = {
+						TestTargetID = 3F1FD65119651F51000976C1;
+					};
+				};
+			};
+			buildConfigurationList = 3F1FD64D19651F51000976C1 /* Build configuration list for PBXProject "DragonFlyCatcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F1FD64919651F51000976C1;
+			productRefGroup = 3F1FD65319651F51000976C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F1FD65119651F51000976C1 /* DragonFlyCatcher */,
+				3F1FD67219651F51000976C1 /* DragonFlyCatcherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F1FD65019651F51000976C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1FD66E19651F51000976C1 /* Images.xcassets in Resources */,
+				3F1FD66019651F51000976C1 /* InfoPlist.strings in Resources */,
+				3F1FD66919651F51000976C1 /* Main.storyboard in Resources */,
+				3F1FD68C196522DF000976C1 /* ring.png in Resources */,
+				3F1FD68D196522DF000976C1 /* tombo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1FD67119651F51000976C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1FD67F19651F51000976C1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F1FD64E19651F51000976C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1FD66C19651F51000976C1 /* ViewController.m in Sources */,
+				3F1FD66619651F51000976C1 /* AppDelegate.m in Sources */,
+				3F1FD66219651F51000976C1 /* main.m in Sources */,
+				3F1FD69019652BA4000976C1 /* KadoMaruButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1FD66F19651F51000976C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1FD68119651F51000976C1 /* DragonFlyCatcherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F1FD67919651F51000976C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F1FD65119651F51000976C1 /* DragonFlyCatcher */;
+			targetProxy = 3F1FD67819651F51000976C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F1FD65E19651F51000976C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F1FD65F19651F51000976C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3F1FD66719651F51000976C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F1FD66819651F51000976C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F1FD67D19651F51000976C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F1FD67E19651F51000976C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F1FD68219651F51000976C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3F1FD68319651F51000976C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F1FD68519651F51000976C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DragonFlyCatcher/DragonFlyCatcher-Prefix.pch";
+				INFOPLIST_FILE = "DragonFlyCatcher/DragonFlyCatcher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3F1FD68619651F51000976C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DragonFlyCatcher/DragonFlyCatcher-Prefix.pch";
+				INFOPLIST_FILE = "DragonFlyCatcher/DragonFlyCatcher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3F1FD68819651F51000976C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DragonFlyCatcher.app/DragonFlyCatcher";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DragonFlyCatcher/DragonFlyCatcher-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DragonFlyCatcherTests/DragonFlyCatcherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3F1FD68919651F51000976C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DragonFlyCatcher.app/DragonFlyCatcher";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DragonFlyCatcher/DragonFlyCatcher-Prefix.pch";
+				INFOPLIST_FILE = "DragonFlyCatcherTests/DragonFlyCatcherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F1FD64D19651F51000976C1 /* Build configuration list for PBXProject "DragonFlyCatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1FD68219651F51000976C1 /* Debug */,
+				3F1FD68319651F51000976C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F1FD68419651F51000976C1 /* Build configuration list for PBXNativeTarget "DragonFlyCatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1FD68519651F51000976C1 /* Debug */,
+				3F1FD68619651F51000976C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3F1FD68719651F51000976C1 /* Build configuration list for PBXNativeTarget "DragonFlyCatcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1FD68819651F51000976C1 /* Debug */,
+				3F1FD68919651F51000976C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F1FD64A19651F51000976C1 /* Project object */;
+}

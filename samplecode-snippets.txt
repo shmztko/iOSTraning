@@ -1,0 +1,62 @@
+- (NSString *) fullname:(NSString *)lastname firstname:(NSString *)firstname {
+    return [NSString stringWithFormat: @"%@ %@", lastname, firstname];
+}
+
+- (void)countUp {
+    [self setCounter: ([self counter] + 1)];
+}
+
+- (void) sampleMethod {
+    NSString *name = [self fullname:@"清水" firstname: @"たけお"];
+    NSLog(@"フルネーム -> %@", name);
+    
+    [self countUp];
+    [self countUp];
+    [self countUp];
+    
+    NSLog(@"カウンター %d", [self counter]);
+}
+
+- (void) sampleMethod4 {
+    int a = 10;
+    float b = 0.52;
+    double c = 45.6;
+    NSArray *array = @[@(a), @(b), @(c)];
+    NSLog(@"%@", array);
+}
+
+- (void) sampleMethod3 {
+    NSString *str1 = @"iPhone";
+    NSString *str2 = @"IPHONE";
+    
+    if ([[ str1 lowercaseString] isEqualToString:[str2 lowercaseString]]) {
+        NSLog(@"同じ");
+    } else {
+        NSLog(@"くそ");
+    }
+}
+
+- (void) sampleMethod2 {
+    NSString *name = @"小野";
+    NSLog(@"%d", name.length);
+    float point = 32.4;
+    NSString *result = (point > 30 ? @"合格" : @"不合格");
+    NSString *message = [NSString stringWithFormat:@"%@ %@ (%1.f点)", result, name, point];
+    NSLog(@"%@", message);
+}
+
+- (void) sampleMethod1 {
+    NSString *msg = @"ありがとう!!";
+    NSDate *now = [NSDate date];
+    NSLog(@"%@%@", msg, now);
+    NSMutableArray *array = [NSMutableArray array];
+    [array addObject:@10];
+    [array addObject:@10];
+    [array addObject:@10];
+    NSNumber *ans;
+    for (NSNumber *num in array) {
+        ans = [[NSNumber alloc] initWithInteger:ans.integerValue + num.integerValue];
+    }
+    NSLog(@"num %@", ans);
+}
+

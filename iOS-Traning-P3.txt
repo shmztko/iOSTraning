@@ -1,0 +1,73 @@
+Objective-C 文法入門
+
+行末にはセミコロンをつける
+	#import, @interface の最後にはつけない
+コメント
+	よくある記法
+演算演算子、インクリメント、デクリメント
+	よくあるやつ
+比較演算子、論理演算子
+	記法はよくあるプログラム言語と同じ。
+	演算の結果は、BOOL型で返される。
+	BOOL型には、YES/NO の２種類が存在する。
+
+変数宣言
+	記法
+		変数型 変数名;
+	整数型 : int, NSInteger (NSInteger を使用するのが主流)
+	文字列 : 
+@ 記法
+　拡張宣言
+　C言語の仕様を拡張していることを表している
+　例："Hello" -> @"Hello" ：文字列クラスをObjective-C用に拡張しており、
+　NSString のインスタンスが生成される。
+typedef
+	データ型の再定義
+	typedef 元データ型 新データ型名
+	例：typedef NSUInteger NewType -> NewTypeという名前でNSUIntegerを再定義
+ポインタ型変数
+	データ型  *変数名
+	C言語とのブリッジ部分以外では、オブジェクトを使用するときに使うと覚えればよい。
+文字列埋め込み
+	@"%@%@" -> %@ でObjCのオブジェクトが代入される。
+定数定義
+	const -> java の final
+	enum -> java のenumと同じ感じ
+マクロ定義
+	#define VOL 100 -> VOL を100で置き換えてコンパイルされる
+インスタンスの生成
+	メモリ割当のallocメソッドと、初期化のinitメソッドを組み合わせて生成する。
+	[[ ${objecttype} alloc] init]
+	${objecttype} の型に対して、alloc でメモリ割当を行い
+	init で初期化処理を実施する。
+コンビニエンスコンストラクタ
+	NSDate -> date メソッド
+	NSString -> string メソッド？
+メソッド呼び出し
+	[ ${reciever} ${message} : ${argument1}]
+	reciever -> メソッド呼び出し対象のオブジェクト
+	message -> メソッド名
+	argument -> 引数
+	２つ以上の引数を渡す場合は特殊な渡し方になる。
+	[ ${reciever} ${message} : ${argument1} ${argumentlabel1}:${argument2} ${argumentlabel2}:${argument3}]
+
+メソッドの定義1
+	- (${returntype}) ${methodname} : (${argumenttype}) ${argumentname} ${argumentlabel} : (${argumenttype}) ${argumentname}
+
+文字列操作
+	文字列連結の演算子が存在しないため、
+	[NSString stringWithFormat:@"", arg1, arg2, arg3]
+	メソッドを使用して文字列を生成する。
+
+	範囲指定
+		NSRange
+			オブジェクトではなく、構造体
+
+	文字列比較 : isEqualToString
+
+配列初期化
+	@{@"one", @"two", @"three"}
+連想配列初期化
+	@{@"A" : @"one", @"B" : @"two", @"C" : @"three"}
+
+ログ出力関数 : NSLog
