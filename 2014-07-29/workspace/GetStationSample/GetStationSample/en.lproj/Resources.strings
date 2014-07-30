@@ -1,0 +1,12 @@
+/* 
+  Resources.strings
+  GetStationSample
+
+  Created by student on 2014/07/30.
+  Copyright (c) 2014年 student. All rights reserved.
+*/
+"station-suffix"="駅";
+"confirm"="確認";
+"ok"="OK";
+"gps-invalid-message"="一時的に位置情報が取得できません。[設定]-[プライパシー]-[位置情報サービス]を確認してください。";
+
