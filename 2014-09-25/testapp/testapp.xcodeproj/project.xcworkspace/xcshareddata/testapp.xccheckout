@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>89931FE7-1EB8-4F96-B579-26E38CE0F2EA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>testapp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>146B9A76-22B9-4D1D-9048-C5540461B455</key>
+		<string>https://github.com/takewo/iOSTraning.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>2014-09-25/testapp/testapp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>146B9A76-22B9-4D1D-9048-C5540461B455</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/takewo/iOSTraning.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>146B9A76-22B9-4D1D-9048-C5540461B455</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>146B9A76-22B9-4D1D-9048-C5540461B455</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOSTraning</string>
+		</dict>
+	</array>
+</dict>
+</plist>
