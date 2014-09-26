@@ -16,6 +16,14 @@
 #import "NSString+SuperNSString.h"
 #import "NSString+RealNumber.h"
 #import "ShopFinder.h"
+
+typedef void (^ShowValueBlock)(int);
+
+void doHeavyJob(int value) {
+    sleep(1);
+    NSLog(@"Value=%d", value);
+}
+
 /**
  * Objective-c 用コマンドラインプログラムのスタートポイント
  * - int argc : 引数の数
@@ -23,10 +31,38 @@
  */
 int main(int argc, const char * argv[])
 {
-
+    @autoreleasepool {
+        NSLog(@"LoopStart");
+        
+        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+        for (int i = 0; i < 100; i++) {
+            dispatch_async(queue, ^ {
+                doHeavyJob(i);
+            });
+        }
+        sleep(4);
+        NSLog(@"Finished");
+    }
     
-   return 0;
+    return 0;
 }
+
+void block() {
+    __block int type = 1;
+    ShowValueBlock block;
+    if (type == 1) {
+        block = ^(int value) {
+            printf("value: %d (%d)\n", type, value);
+        };
+    } else {
+        block = ^(int value) {
+            printf("<<%d:%d>>", type, value);
+        };
+    }
+    type = 3;
+    block(4);
+}
+
 
 void findCurryShop() {
     ShopFinder *finder = [[ShopFinder alloc] init];
